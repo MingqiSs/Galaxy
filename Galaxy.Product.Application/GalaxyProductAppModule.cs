@@ -6,6 +6,9 @@ using Volo.Abp.Modularity;
 
 namespace Galaxy.Product.Application
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [DependsOn(typeof(GalaxyProductDominModule),
        typeof(GalaxyProductEntityFrameworkCoreModule)
         )] 

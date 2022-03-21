@@ -2,6 +2,7 @@
 using Galaxy.Customer.Application.Contarcts.Models;
 using Galaxy.Customer.Application.Contarcts.Models.RP;
 using Galaxy.Customer.Domain.Entities;
+using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,7 +60,7 @@ namespace Galaxy.Customer.Application
             result.Email = customer.Email;
             result.Id = customer.Id;
            
-          // HttpContext.Response.Headers.Add("Authorization", new StringValues(token));
+            //HttpContext.Response.Headers.Add("Authorization", new StringValues(""));
             return new ResultDto<CustomerRP> { Dt = result };
         }
         /// <summary>
